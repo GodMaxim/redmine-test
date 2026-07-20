@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2","Verify search functionality on the main page","chromium","2026-07-20","failed","2026-07-20","Redmine site","redmine.spec.js","",""
+"","2","Verify Calendar Date Filter","chromium","2026-07-20","failed","2026-07-20","Redmine site","redmine.spec.js","",""
+"","2","Validate Login with Invalid Credentials","chromium","2026-07-20","failed","2026-07-20","Redmine site","redmine.spec.js","",""
+"","2","Verify Language Switch","chromium","2026-07-20","failed","2026-07-20","Redmine site","redmine.spec.js","",""
+"","2","Verify 'Clear' Filter Functionality on Issues Page","chromium","2026-07-20","failed","2026-07-20","Redmine site","redmine.spec.js","",""
