@@ -30,8 +30,8 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
  use: {
   baseURL: 'https://www.redmine.org',
-    headless: false,
-    trace: 'on-first-retry',
+  headless: !!process.env.CI, 
+  trace: 'on-first-retry',
   },
   /* Configure projects for major browsers */
   projects: [
