@@ -9,12 +9,12 @@ class LoginPage {
         this.ErrorMessage = page.getByText('Invalid user or password')
     }
 
-        async Username(query) {
-            await this.UsernameInput.fill(query)
+        async Username(text) {
+            await this.UsernameInput.fill(text)
         }
 
-        async Password(query) {
-            await this.PasswordInput.fill(query)
+        async Password(text) {
+            await this.PasswordInput.fill(text)
         }
         
         async clickSubmit() {

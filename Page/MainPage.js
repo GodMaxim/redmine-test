@@ -1,4 +1,4 @@
-const { expect } = require('@playwright/test')
+const { expect } = require('@playwright/test');
 
 class MainPage {
     constructor(page) {
@@ -19,8 +19,8 @@ class MainPage {
           await this.GuideBtn.click()
         }
 
-  async Search(query) {
-    await this.SearchInput.fill(query)
+  async Search(text) {
+    await this.SearchInput.fill(text)
     await this.SearchInput.press('Enter')
   }
 

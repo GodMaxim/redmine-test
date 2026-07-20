@@ -24,7 +24,6 @@ test.describe ("Redmine site", () => {
 
     test("Verify Language Switch", async ({ page, mainPage, guidePage }) => {
       await mainPage.clickGuide()
-      await page.waitForTimeout(3000)
       await guidePage.clickGermanLang()
       await page.waitForTimeout(3000)
       await expect(page).toHaveURL(/.*DeGuide/)
@@ -34,7 +33,6 @@ test.describe ("Redmine site", () => {
       await mainPage.Search('Testing')
       await page.waitForTimeout(3000)
       await expect(mainPage.SearchResult).toContainText('Testing')
-      await page.waitForTimeout(3000)
      });
 
      test("Verify 'Clear' Filter Functionality on Issues Page", async ({ page, mainPage, issuesPage }) => {
@@ -49,7 +47,6 @@ test.describe ("Redmine site", () => {
 
       test("Verify Calendar Date Filter", async ({ page, mainPage, activityPage }) => {
         await mainPage.clickActivity()
-        await page.waitForTimeout(3000)
         await activityPage.setFromDate('2026-07-10')
         await activityPage.clickApplyBtn()
         await page.waitForTimeout(3000)
